@@ -49,13 +49,13 @@ Include screenshots of the project in action to give a visual representation of 
 ## Acknowledgements
 Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
 
-[Participant 1]([https://github.com/emiirkaya])
-[Participant 2]([https://github.com/mfurkanozdem])
+[Participant 1](https://github.com/emiirkaya)
+[Participant 2](https://github.com/mfurkanozdem)
 [Participant 3](https://github.com/user1)
 [Participant 1](https://github.com/user1)
 
-[Resource]([https://www.raspberrypi.org/])
+[Resource](https://www.raspberrypi.org/)
 [Speaker Recognition Tool Api](https://picovoice.ai/docs/eagle)
-[Text-to-Speech Tool]([https://cloud.google.com/text-to-speech/docs])
-[Speech-to-Text Tool]([https://cloud.google.com/speech-to-text/docs/])
-[LLM Tool]([https://platform.openai.com/docs/api-reference/introduction])
+[Text-to-Speech Tool](https://cloud.google.com/text-to-speech/docs)
+[Speech-to-Text Tool](https://cloud.google.com/speech-to-text/docs/)
+[LLM Tool](https://platform.openai.com/docs/api-reference/introduction)
