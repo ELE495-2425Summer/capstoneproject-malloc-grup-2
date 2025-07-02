@@ -21,13 +21,15 @@ The main features that this project highlights are separated into 4 sections:
 Raspberry Pi OS 64-bit
 
 ### - Applications 
+- Autonomous Vehicle Navigation: The vehicle will be able to detect any obstacles along its path in forward motion.
+- Precise Rotation : The vehicle has an integrated gyroscope sensor module to accurately turn 90 degrees when prompted to turn right or left and 180 degrees when prompted to turn back. This integration allows the car to rotate accurately, regardless of the environments parasitic properties.
+- Speech Recognition: The device will check for the users authentication from its enrolled profiles of the project participants' voices. If it cannot correlate between the users voice and the profiles', the application will not proceed.
+- Speech-to-Text: Initially, the users prompt will be converted to text via an STT provider for the LLM to process its content into concrete text commands. 
 
-- Speech Recognition:
-- Text-to-Speech:
-- Natural Language Processing:
-- Speaker Recognition:
+- Natural Language Processing: The LLM(Large Language Model) service
+- Text-to-Speech: 
 - Object Detection:
-- User-Friendly GUI:
+- User-Friendly GUI: The collected
 
 ## Installation
 In any linux-based SBC(Single Board Computer) like a raspberry pi model 3B+
