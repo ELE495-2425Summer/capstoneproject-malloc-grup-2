@@ -26,10 +26,10 @@ Raspberry Pi OS 64-bit
 - Speech Recognition: The device will check for the users authentication from its enrolled profiles of the project participants' voices. If it cannot correlate between the users voice and the profiles', the application will not proceed.
 - Speech-to-Text: Initially, the users prompt will be converted to text via an STT provider for the LLM to process its content into concrete text commands. 
 
-- Natural Language Processing: The LLM(Large Language Model) service
-- Text-to-Speech: 
-- Object Detection:
-- User-Friendly GUI: The collected
+- Natural Language Processing: The LLM(Large Language Model) service will receive the text from the STT module to filter its contents into sequential commands of movement for the vehicle to perform and discard any prompt that it can't execute.
+- Text-to-Speech: This service will provide vocal feedback on its movement while the vehicle propagates along its commanded path.
+- Object Detection: The vehicle will stop any time it detects an obstacle along its path using the ultrasonic distance sensor.
+- User-Friendly GUI: The is able to start the main script of the source code to initiate the car to wait for instructions and start giving commands to it through a BLE and SSH server powered UI.
 
 ## Installation
 In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
@@ -55,22 +55,24 @@ Note: Since this project is made for a Raspberry pi Model 3B+, the pins may diff
     Perform tests by transmitting on 433MHz using the Arduino Nano and the omnidirectional antenna.
     Create the user interface.
 
+Start connecting the bluetooth speaker and microphone to the SBC.
+
+
 ## Usage
-Install the Required Libraries before running the project, make sure all necessary dependencies are installed on your Raspberry Pi.
+After installing the required hardware and software prerequisites the user is able to start giving commands either from either the UI or through the push button on the breadboard ıf the vehicle.
 
 Once the main.py python script is run from the user interface or manually through the original operating system, the vehicle will begin to wait for the user to either start recording from the UI using the 'record' button or through the push button on the vehicle to start giving vocal instructions through the microphone.
 
-When the user has given enough input, they can either press the record button on the UI again or release the button on the vehicle to stop recording. When the recording stops, the SBC will start determine if the users voice is authenticated or not. If they are authenticated, the recorded voice will be sent to the STT service to extract raw text from it 
+When the user has given enough input, they can either press the record button on the UI again or release the button on the vehicle to stop recording. While the recording continues, the red LED will blink to indicate its status. When the recording stops, the SBC will start determine if the users voice is authenticated or not. If they are authenticated, the recorded voice will be sent to the STT service to extract raw text from it. Then the LLM module takes the raw text file to filter its content to only allow executable commands to be sent to the TTS and the Motor driver module. Once all the commands are listed, the car will start to give vocal feedback and initiate its movement starting from what the user prompted first to the last piece of command. And once it finalizes its movement it will wait for instructions either from the UI record button or the physical push button indicated by the blue LED.
 
 ## Screenshots
 Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
 
 ## Acknowledgements
-Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
 
 [Participant 1](https://github.com/emiirkaya)
 [Participant 2](https://github.com/mfurkanozdem)
-[Participant 3](https://github.com/user1)
+[Participant 3](https://github.com/SEFIK5545)
 [Participant 1](https://github.com/user1)
 
 [Resource](https://www.raspberrypi.org/)
