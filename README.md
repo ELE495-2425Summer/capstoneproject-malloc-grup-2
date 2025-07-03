@@ -29,7 +29,7 @@ Raspberry Pi OS 64-bit
 - Natural Language Processing: The LLM(Large Language Model) service will receive the text from the STT module to filter its contents into sequential commands of movement for the vehicle to perform and discard any prompt that it can't execute.
 - Text-to-Speech: This service will provide vocal feedback on its movement while the vehicle propagates along its commanded path.
 - Object Detection: The vehicle will stop any time it detects an obstacle along its path using the ultrasonic distance sensor.
-- User-Friendly GUI: The is able to start the main script of the source code to initiate the car to wait for instructions and start giving commands to it through a BLE and SSH server powered UI.
+- User-Friendly GUI: The User Interface is able to start the main script of the source code to initiate the car to wait for instructions and start giving commands to it through a BLE and SSH server powered PyQT GUI script.
 
 ## Installation
 In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
