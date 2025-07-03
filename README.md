@@ -34,17 +34,15 @@ Raspberry Pi OS 64-bit
 ## Installation
 In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
 
-```bash
-Example commands
+
 git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
 cd project-name
 
-```
 Install Python 3.10+ and pip if it hasn't already been installed.
 Install the required libraries below using a comfortable IDE for Python:
 - to be cont.
 
-Start assembling the hardware with reference to the schematic and circuit image below using jumper wires or thick cables for high power rails(power supply lines) if necessary.
+Start assembling the hardware to the skeleton of the vehicle as you see fit or according to our project image with reference to the schematic and circuit image below using jumper wires or thick cables for high power rails(power supply lines) if necessary.
 
 Note: Since this project is made for a Raspberry pi Model 3B+, the pins may differ from other brands or models. So the PWM and I2C pins should be connected with respect to the module at hand and not just any other GPIO.
 
