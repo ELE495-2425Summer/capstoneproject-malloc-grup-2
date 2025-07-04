@@ -85,6 +85,7 @@ Start connecting the bluetooth speaker and microphone to the SBC using either th
 
 ## Usage
 After installing the required hardware and software prerequisites the user is able to start giving commands either from the UI or through the push button on the breadboard of the vehicle. Before the user can speak, they must register their voices through the speaker recognition function enroll_speaker that is present in the stt_modulu.py script. The speaker will give audio samples until the Progress is 100% done like the image below.
+
 ![image](https://github.com/user-attachments/assets/59d34c87-1efb-482d-90a1-c2d8eeea8281)
 
 
