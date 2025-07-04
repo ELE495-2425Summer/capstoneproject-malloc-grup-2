@@ -35,8 +35,9 @@ Raspberry Pi OS 64-bit
 - User-Friendly GUI: The User Interface is able to start the main script of the source code to initiate the car to wait for instructions and start giving commands to it through a BLE and SSH server powered PyQT GUI script.
 
 ## Installation
-In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
+In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, go to a desired path where you want the project files to be and clone this repository to get the source code of this project by typing the script below on the console:
 ```
+cd desired-path
 git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
 cd capstoneproject-malloc-grup-2
 ```
