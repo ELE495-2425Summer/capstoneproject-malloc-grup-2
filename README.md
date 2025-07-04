@@ -19,9 +19,10 @@ The main features that this project highlights are separated into 3 sections:
  * Raspberry pi model 3B+ , L298N DC motor Driver, 2 DC Motors, 2 Tires and a Ball caster,  Wireless Speaker and microphone, HC-05 Ultrasonic distance sensor, 2s2p(2 series 2 parallel) lithium-ion batteries, 2 LED indicators (optional), 5V USB output SMPS PCB, MPU6050 Gyroscope Sensor
 ### - Operating System and packages 
 Raspberry Pi OS 64-bit
-Google Cloud Text-to-Speech,Speech-to-Text
-OpenAI ChatGPT GPT 4.0 API
-Picovoice Eagle Speaker Recognition
+#### API Services : 
+- Google Cloud Text-to-Speech,Speech-to-Text
+- OpenAI ChatGPT GPT 4.0 API
+- Picovoice Eagle Speaker Recognition
 
 ### - Applications 
 - Speech Recognition: The device will check for the users authentication from its enrolled profiles of the project participants' voices. If it cannot correlate between the users voice and the profiles', the application will not proceed.
@@ -35,19 +36,20 @@ Picovoice Eagle Speaker Recognition
 
 ## Installation
 In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
-
+```
     git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
     cd capstoneproject-malloc-grup-2
-
+```
 Install Python 3.10+ and pip if it hasn't already been installed.[Link](https://www.python.org/downloads/)
 Create a virtual environment for Python on a desired path.(Your IDE may also automatically create it.)
-
+```
     python -m venv /path/to/new/virtual/environment-name
     source environment-name/bin/activate
+```
 Install the required libraries below using a comfortable IDE for Python(make sure your environment is activated):
-
-        pip install 
-        
+```
+        pip install pyaudio os numpy io pydub google.cloud google.oauth2.service_account threading openai time json
+```        
 Note: Make sure you create a seperate virtual environment for Python before installing any libraries to prevent compatibility issues as you navigate throughout the project.
 
 It is time to create accounts for the API calls, you need to sign up for Google Cloud and Picovoice to retrieve your API keys for free. You also need to sign up and pay $5 to create an API account for OpenAI's GPT APIs.
@@ -86,8 +88,6 @@ After installing the required hardware and software prerequisites the user is ab
 
 
 Once the main.py python script is run from the user interface or manually through the original operating system, the vehicle will begin to wait for the user to either start recording from the UI using the 'record' button or through the push button on the vehicle to start giving vocal instructions through the microphone indicated by the BLUE LED.
-
-When the user has given enough input, they can either press the record button on the UI again or release the button on the vehicle to stop recording. While the recording continues, the RED LED will blink to indicate its status. When the recording stops, the SBC will start determine if the users voice is authenticated or not. If they are authenticated, the recorded voice will be sent to the STT service to extract raw text from it. Then the LLM module takes the raw text file to filter its content to only allow executable commands to be sent to the TTS and the Motor driver module. Once all the commands are listed, the car will start to give vocal feedback and initiate its movement starting from what the user prompted first to the last piece of command. And once it finalizes its movement it will wait for instructions either from the UI record button or the physical push button indicated by the BLUE LED.
 
 ## Screenshots
 
