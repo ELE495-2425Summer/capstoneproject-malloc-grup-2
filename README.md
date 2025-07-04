@@ -37,18 +37,18 @@ Raspberry Pi OS 64-bit
 ## Installation
 In any linux-based SBC(Single Board Computer) PCB like a raspberry pi model 3B+, clone this repository to get the source code of this project by typing the script below on the console:
 ```
-    git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
-    cd capstoneproject-malloc-grup-2
+git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
+cd capstoneproject-malloc-grup-2
 ```
 Install Python 3.10+ and pip if it hasn't already been installed.[Link](https://www.python.org/downloads/)
 Create a virtual environment for Python on a desired path.(Your IDE may also automatically create it.)
 ```
-    python -m venv /path/to/new/virtual/environment-name
-    source environment-name/bin/activate
+python -m venv /path/to/new/virtual/environment-name
+source environment-name/bin/activate
 ```
 Install the required libraries below using a comfortable IDE for Python(make sure your environment is activated):
 ```
-        pip install pyaudio os numpy io pydub google.cloud google.oauth2.service_account threading openai time json
+pip install pyaudio os numpy io pydub google.cloud google.oauth2.service_account threading openai time json
 ```        
 Note: Make sure you create a seperate virtual environment for Python before installing any libraries to prevent compatibility issues as you navigate throughout the project.
 
