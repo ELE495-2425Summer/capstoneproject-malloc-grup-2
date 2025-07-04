@@ -21,7 +21,7 @@ The main features that this project highlights are separated into 3 sections:
 Raspberry Pi OS 64-bit
 #### API Services : 
 - Google Cloud Text-to-Speech,Speech-to-Text
-- OpenAI ChatGPT GPT 4.0 API
+- LLM with OpenAI ChatGPT GPT 4.0 API
 - Picovoice Eagle Speaker Recognition
 
 ### - Applications 
@@ -96,13 +96,13 @@ Once the main.py python script is run from the user interface or manually throug
 
 ## Acknowledgements
 
-[Participant 1](https://github.com/emiirkaya)
-[Participant 2](https://github.com/mfurkanozdem)
-[Participant 3](https://github.com/SEFIK5545)
-[Participant 1](https://github.com/user1)
+Participant 1 -> [Emir Kaya](https://github.com/emiirkaya)
+Participant 2 -> [Furkan Özdem](https://github.com/mfurkanozdem)
+Participant 3 -> [Emir Şefik Öztürk](https://github.com/SEFIK5545)
+Participant 4 -> [Bilge Cimbar](https://github.com/Bilge-Cimbar)
 
-[Resource](https://www.raspberrypi.org/)
-[Speaker Recognition Tool Api](https://picovoice.ai/docs/eagle)
-[Text-to-Speech Tool](https://cloud.google.com/text-to-speech/docs)
-[Speech-to-Text Tool](https://cloud.google.com/speech-to-text/docs/)
-[LLM Tool](https://platform.openai.com/docs/api-reference/introduction)
+[Raspberry Pi](https://www.raspberrypi.org/)
+[Speaker Recognition Tool API](https://picovoice.ai/docs/eagle)
+[Text-to-Speech Tool API](https://cloud.google.com/text-to-speech/docs)
+[Speech-to-Text Tool API](https://cloud.google.com/speech-to-text/docs/)
+[LLM Tool API](https://platform.openai.com/docs/api-reference/introduction)
