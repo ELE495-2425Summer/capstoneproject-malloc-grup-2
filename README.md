@@ -41,7 +41,7 @@ cd desired-path
 git clone https://github.com/ELE495-2425Summer/capstoneproject-malloc-grup-2.git
 cd capstoneproject-malloc-grup-2
 ```
-Install Python 3.10+ and pip if it hasn't already been installed.[Link](https://www.python.org/downloads/)
+Install [Python](https://www.python.org/downloads/) 3.10+ and pip if it hasn't already been installed.
 Create a virtual environment for Python on a desired path.(Your IDE may also automatically create it.)
 ```
 python -m venv /path/to/new/virtual/environment-name
