@@ -49,7 +49,7 @@ source environment-name/bin/activate
 ```
 Install the required libraries below using a comfortable IDE for Python(make sure your environment is activated):
 ```
-pip install pyaudio os numpy io pydub google.cloud google.oauth2.service_account threading openai time json
+pip install pyaudio numpy pydub google.cloud google openai pveagle
 ```        
 Note: Make sure you create a seperate virtual environment for Python before installing any libraries to prevent compatibility issues as you navigate throughout the project.
 
