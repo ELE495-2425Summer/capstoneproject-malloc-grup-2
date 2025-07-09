@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="simge.qrc">
+    <normaloff>:/simge/driver.png</normaloff>:/simge/driver.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+}
+
+/* Genel pencere arka planı */
+QMainWindow, QWidget {
+    background-color: #121212;
+}
+
+/* QLabel */
+QLabel {
+    color: #f0f0f0;
+    font-size: 11pt;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #2d2d2d;
+}
+
+QPushButton:pressed {
+    background-color: #0078d7;
+}
+
+/* QLineEdit */
+QLineEdit {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* QGroupBox */
+QGroupBox {
+	background-color: #737272;
+    border: 1px solid #9e0b0b;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 7pt;
+
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 0px;
+    padding: 0 23px 0 23px;
+	
+}
+
+/* ScrollArea */
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollArea QWidget {
+    background-color: transparent;
+}
+
+/* Scrollbar Dikey */
+QScrollBar:vertical {
+    background: #1e1e1e;
+    width: 10px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #888;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Scrollbar Yatay */
+QScrollBar:horizontal {
+    background: #1e1e1e;
+    height: 10px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: #555;
+    min-width: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #888;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* QComboBox */
+QComboBox {
+    background-color: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+QComboBox QAbstractItemView {
+    background-color: #2a2a2a;
+    selection-background-color: #0078d7;
+}
+
+/* QCheckBox */
+QCheckBox {
+    spacing: 5px;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+QCheckBox::indicator:checked {
+    background-color: #0078d7;
+    border: 1px solid #ffffff;
+}
+QCheckBox::indicator:unchecked {
+    background-color: #333;
+    border: 1px solid #aaa;
+}
+
+QToolTip {
+    background-color: #2a2a2a;  /* Arka plan */
+    color: white;               /* Yazı rengi */
+    border: 1px solid #910181;      /* Kenarlık */
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 10pt;
+    font-family: Consolas;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #35bd0f;
+    border-radius: 25%;
+    min-width: 10px;
+    min-height: 10px;
+}
+
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>941</width>
+         <height>700</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="2" column="2">
+         <widget class="QGroupBox" name="startmic">
+          <property name="minimumSize">
+           <size>
+            <width>95</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>82</width>
+            <height>82</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	border: none;
+}</string>
+          </property>
+          <property name="title">
+           <string>Konuş</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <widget class="QPushButton" name="StartMic_Button">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>72</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #35bd0f;
+    border-radius: 25%;
+    min-width: 10px;
+    min-height: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="simge.qrc">
+             <normaloff>:/simge/mic_111082.png</normaloff>:/simge/mic_111082.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="Komut_bilgisi">
+          <property name="text">
+           <string>Hali Hazırda
+Gerçekleştirilen Komut</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Araç Durumu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Araç Durumu</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	background-color: #737272;
+    border: 2px solid #9e0b0b;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 7pt;
+
+}</string>
+          </property>
+          <property name="title">
+           <string>Alınan Komutlar</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QTextEdit" name="textEdit_2">
+             <property name="styleSheet">
+              <string notr="true">QTextEdit {
+	background-color: #292929;
+}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	background-color: #737272;
+    border: 2px solid #9e0b0b;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 7pt;
+
+}</string>
+          </property>
+          <property name="title">
+           <string>Bağlantılar</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="1">
+            <widget class="QLabel" name="Bluetooth_durum_2">
+             <property name="text">
+              <string>Durum</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="Bluetooth_durum">
+             <property name="text">
+              <string>Bluetooth:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="Bluetooth_durum_3">
+             <property name="text">
+              <string>Durum</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	background-color: #737272;
+    border: 2px solid #9e0b0b;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 7pt;
+
+}</string>
+          </property>
+          <property name="title">
+           <string>Tamamlanan Komutlar</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QTextEdit" name="textEdit">
+             <property name="styleSheet">
+              <string notr="true">QTextEdit {
+	background-color: #292929;
+}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="startgrp">
+          <property name="minimumSize">
+           <size>
+            <width>95</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>82</width>
+            <height>82</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+	border: none;
+
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 0px;
+    padding: 0 8px 0 8px;
+	
+}</string>
+          </property>
+          <property name="title">
+           <string>Aracı Çalıştır</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <widget class="QPushButton" name="StartCar_Button">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>72</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>36</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #35bd0f;
+    border-radius: 25%;
+    min-width: 10px;
+    min-height: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="simge.qrc">
+             <normaloff>:/simge/restart.png</normaloff>:/simge/restart.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Alınan ses komutu</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="Tarih">
+          <property name="text">
+           <string>Tarih</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>963</width>
+     <height>34</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="simge.qrc"/>
+ </resources>
+ <connections/>
+</ui>

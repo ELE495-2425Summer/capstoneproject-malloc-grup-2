@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="simge">
+    <file>restart.png</file>
+    <file>connected.png</file>
+    <file>disconnected.png</file>
+    <file>error.png</file>
+    <file>searching.png</file>
+    <file>driver.png</file>
+    <file>micstop.png</file>
+    <file>stop.png</file>
+    <file>mic_111082.png</file>
+    <file>power-button-off_icon-icons.com_73450.png</file>
+  </qresource>
+</RCC>
