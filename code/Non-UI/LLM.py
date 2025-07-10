@@ -17,7 +17,7 @@ def ask_chatgpt(prompt, model="gpt-4o"):#ığş
                 {"role": "system", "content": system_instruction},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.7
+            temperature=0.1
             )
     
     return response["choices"][0]["message"]["content"]
