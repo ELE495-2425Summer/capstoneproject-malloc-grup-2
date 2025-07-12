@@ -71,25 +71,31 @@ Note: Since this project is made for a Raspberry pi Model 3B+, the pins may diff
 
 
 ### Vehicle front image
-![12](https://github.com/user-attachments/assets/c63f1b86-19df-489d-88c7-1f3509bc16dc)
+
+![ön](https://github.com/user-attachments/assets/31bc618e-7898-4ef2-ae9b-b85bd581c7a8)
+
 
 ### Vehicle Up image
-
+![kuşbakış](https://github.com/user-attachments/assets/9b889f26-21c5-4d0d-8ca1-78791a441cd3)
 ### Vehicle Right side image
+![sağ](https://github.com/user-attachments/assets/63bdc318-e0d2-4fba-b683-e05b99588a6d)
 
 ### Vehicle Left side image
+![sol](https://github.com/user-attachments/assets/de67715e-9bb7-4148-a7a6-8b73d56268e0)
+### Vehicle Rear side image
 
+![arka](https://github.com/user-attachments/assets/6d922d92-174a-47ee-935d-5cb9e1a6e7ea)
 
 Start connecting the bluetooth speaker and microphone to the SBC using either the ssh sever from the UI, or the Raspberry pi OS.
 
 
 ## Usage
-After installing the required hardware and software prerequisites the user is able to start giving commands either from the UI or through the push button on the breadboard of the vehicle. Before the user can speak, they must register their voices through the speaker recognition function enroll_speaker that is present in the stt_modulu.py script. The speaker will give audio samples until the Progress is 100% done like the image below.
+After installing the required hardware and software prerequisites the user is able to start giving commands either from the UI or through the push button on the breadboard of the vehicle. Before the user can speak, they must register their voices through the speaker recognition function enroll_speaker that is present in the stt_modulu.py script. The speaker will give audio samples until the Progress is 100% done like the image below. Make sure to give different sentences or words otherwise the bar will not go all the way up.
 
 ![image](https://github.com/user-attachments/assets/59d34c87-1efb-482d-90a1-c2d8eeea8281)
 
 
-Once the main.py python script is run from the user interface or manually through the original operating system, the vehicle will begin to wait for the user to either start recording from the UI using the 'record' button or through the push button on the vehicle to start giving vocal instructions through the microphone indicated by the BLUE LED.
+Once the main.py python script is run from the user interface or manually through the original operating system through an ethernet VNC connection, the vehicle will begin to wait for the user to either start recording from the UI using the 'record' button or through the push button on the vehicle to start giving vocal instructions through the microphone indicated by the BLUE LED.
 
 ## Screenshots
 
