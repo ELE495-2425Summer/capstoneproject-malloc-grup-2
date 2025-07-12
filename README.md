@@ -73,19 +73,24 @@ Note: Since this project is made for a Raspberry pi Model 3B+, the pins may diff
 
 ### Vehicle front image
 
-![ön](https://github.com/user-attachments/assets/31bc618e-7898-4ef2-ae9b-b85bd581c7a8)
+![ön](https://github.com/user-attachments/assets/11e865c4-f14c-4121-a793-413b5464159e)
+
 
 
 ### Vehicle Up image
-![kuşbakış](https://github.com/user-attachments/assets/9b889f26-21c5-4d0d-8ca1-78791a441cd3)
+![üst](https://github.com/user-attachments/assets/ff7a7eaa-4af7-42d0-868e-24046de0845c)
+
 ### Vehicle Right side image
-![sağ](https://github.com/user-attachments/assets/63bdc318-e0d2-4fba-b683-e05b99588a6d)
+![sağ](https://github.com/user-attachments/assets/5d1a60e9-374e-4a83-bf5e-65dd5f47a8fe)
+
 
 ### Vehicle Left side image
-![sol](https://github.com/user-attachments/assets/de67715e-9bb7-4148-a7a6-8b73d56268e0)
+![osl](https://github.com/user-attachments/assets/0f5a0fe9-b09d-4955-b177-eeaf4cb60ad9)
+
 ### Vehicle Rear side image
 
-![arka](https://github.com/user-attachments/assets/6d922d92-174a-47ee-935d-5cb9e1a6e7ea)
+![arka](https://github.com/user-attachments/assets/d75fac7e-867c-4013-8ecf-f4df1a8811c8)
+
 
 Start connecting the bluetooth speaker and microphone to the SBC using either the ssh server from the UI, or the Raspberry pi OS using a VNC connection. How to use a [VNC](https://www.youtube.com/watch?v=EXYiHmbyZ9c&pp=ygUhdm5jIGNvbm5lY3QgcmFzcGJlcnJ5IHBpIGV0aGVybmV0) connection on the same network(ethernet).
 
