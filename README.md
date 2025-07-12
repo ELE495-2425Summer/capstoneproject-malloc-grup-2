@@ -100,6 +100,8 @@ Once the main.py python script is run from the user interface or manually throug
 ## Screenshots
 
 
+Working video [link](https://youtu.be/z8yhrKLpuHg) on YT 
+
 ## Acknowledgements
 
 Participant 1 -> [Emir Kaya](https://github.com/emiirkaya)
