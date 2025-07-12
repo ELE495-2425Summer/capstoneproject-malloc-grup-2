@@ -5,7 +5,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+- [Working Visuals](#Visuals)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -98,7 +98,7 @@ After installing the required hardware and software prerequisites the user is ab
 
 Once the main.py python script is run from the user interface or manually through the original operating system through an ethernet VNC connection, the vehicle will begin to wait for the user to either start recording from the UI using the 'record' button or through the push button on the vehicle to start giving vocal instructions through the microphone indicated by the BLUE LED.
 
-## Screenshots
+## Visuals
 
 
 Working video [link](https://youtu.be/z8yhrKLpuHg) on YT 
