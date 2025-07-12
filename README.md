@@ -86,7 +86,7 @@ Note: Since this project is made for a Raspberry pi Model 3B+, the pins may diff
 
 ![arka](https://github.com/user-attachments/assets/6d922d92-174a-47ee-935d-5cb9e1a6e7ea)
 
-Start connecting the bluetooth speaker and microphone to the SBC using either the ssh sever from the UI, or the Raspberry pi OS.
+Start connecting the bluetooth speaker and microphone to the SBC using either the ssh server from the UI, or the Raspberry pi OS using a VNC connection. How to use a [VNC](https://www.youtube.com/watch?v=EXYiHmbyZ9c&pp=ygUhdm5jIGNvbm5lY3QgcmFzcGJlcnJ5IHBpIGV0aGVybmV0) connection on the same network(ethernet).
 
 
 ## Usage
