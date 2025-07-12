@@ -16,7 +16,7 @@ This capstone project aims to develop an autonomous vehicle that takes vocal ins
 The main features that this project highlights are separated into 3 sections:
 
 ### - Hardware
- * Raspberry pi model 3B+ , L298N DC motor Driver, 2 DC Motors, 2 Tires and a Ball caster,  Wireless Speaker and microphone, HC-05 Ultrasonic distance sensor, 2s2p(2 series 2 parallel) lithium-ion batteries, 2 LED indicators (optional), 5V USB output SMPS PCB, MPU6050 Gyroscope Sensor
+ * 1x Raspberry pi model 3B+ , 2x L298N DC motor Driver PCB, 4x DC Motors, 4 Tires,  1x Wireless Speaker and microphone, 1x HC-05 Ultrasonic distance sensor, 2s2p(2 series 2 parallel) lithium-ion batteries, 2x LED indicators (optional),1x 5V USB output SMPS PCB(LM2596), 1x MPU6050 Gyroscope Sensor, 1x 470, 1x 330, 4x 1k, 1x 2k Ohm Resistors, 1x pushbutton
 ### - Operating System and packages 
 Raspberry Pi OS 64-bit
 #### API Services : 
@@ -64,7 +64,8 @@ Now you are ready to execute the main script to run the project. If you wish, yo
 Start assembling the hardware to the skeleton of the vehicle as you see fit or according to our project image with reference to the schematic and circuit image below using jumper wires or thick cables for high power rails(power supply lines) if necessary.
 
 ### Vehicle circuit connection image
-![circuit_image(3)](https://github.com/user-attachments/assets/4b4c551f-59c6-4e67-812f-e6afe0ad7d74)
+<img width="3000" height="1723" alt="circuit_image(4)" src="https://github.com/user-attachments/assets/af7cf2fb-02f8-498f-be5a-5357663b2c9e" />
+
 
 
 Note: Since this project is made for a Raspberry pi Model 3B+, the pins may differ from other brands or models. So the PWM and I2C pins should be connected with respect to the module at hand and not just any other GPIO.
